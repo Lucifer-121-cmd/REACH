@@ -68,3 +68,12 @@ paper/template/
 fig_system_schematic/fig_system_schematic-1.png
 
 Guide for authors - Robotics and Autonomous Systems - ISSN 0921-8890 _ ScienceDirect.com by Elsevier.pdf
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.spl
+paper/reach_ras.pdf
