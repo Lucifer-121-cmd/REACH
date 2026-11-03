@@ -1,0 +1,47 @@
+{
+  "artifact": "fig_stepchange.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-29T07:15:00.956564+00:00",
+  "script": "27_reach_figures.py",
+  "argv": [
+    "scripts/27_reach_figures.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "3b4648611ebe4b08b79f5e83a258e893851552f3",
+    "commit_short": "3b46486",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "aper/figures/fig_conservatism.pdf",
+      "paper/figures/fig_enforce.pdf",
+      "paper/figures/fig_gamma.pdf",
+      "paper/figures/fig_map_jfield.pdf",
+      "paper/figures/fig_power_model.pdf",
+      "paper/figures/fig_reach_frontier.pdf",
+      "paper/figures/fig_stepchange.pdf",
+      "paper/figures/fig_timing_survival.pdf",
+      "scripts/27_reach_figures.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/stepchange/stepchange_results.json",
+      "exists": true,
+      "sha256": "c4fffb8a6530b171e7da4701873f3063784f0c841399852575ae28c92c951e09",
+      "bytes": 409358
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_audit20260920/reach/stepchange/stepchange_results.json",
+      "exists": true,
+      "sha256": "d78c5e42fcc6a35903dfdddb462c611ca34525669a795e102069233f5bfe985f",
+      "bytes": 467169
+    }
+  ],
+  "effective_config": {},
+  "figure": "stepchange",
+  "source": "B=280: final-code re-run 2026-09-15; B=320: pre-registered replication 2026-09-22 (runs/run_audit20260920)"
+}

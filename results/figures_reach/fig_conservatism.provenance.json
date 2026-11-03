@@ -1,0 +1,46 @@
+{
+  "artifact": "fig_conservatism.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-29T07:15:02.388947+00:00",
+  "script": "27_reach_figures.py",
+  "argv": [
+    "scripts/27_reach_figures.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "3b4648611ebe4b08b79f5e83a258e893851552f3",
+    "commit_short": "3b46486",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "aper/figures/fig_conservatism.pdf",
+      "paper/figures/fig_enforce.pdf",
+      "paper/figures/fig_gamma.pdf",
+      "paper/figures/fig_map_jfield.pdf",
+      "paper/figures/fig_power_model.pdf",
+      "paper/figures/fig_reach_frontier.pdf",
+      "paper/figures/fig_stepchange.pdf",
+      "paper/figures/fig_timing_survival.pdf",
+      "scripts/27_reach_figures.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/certificates_adaptive_p3.json",
+      "exists": true,
+      "sha256": "e8316664a02d8f35438090f814753ed3c494e41fa1f2abad47b6bbfe2850a44d",
+      "bytes": 6224
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/p3_validation/p3_validation.json",
+      "exists": true,
+      "sha256": "81e82a33ed74a26d4e59b6ed8723ca90ec7f7fc522fa34657c44fecf53f41e31",
+      "bytes": 75805
+    }
+  ],
+  "effective_config": {},
+  "figure": "conservatism_dial"
+}

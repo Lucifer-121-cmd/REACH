@@ -1,0 +1,23 @@
+# S-Curve Scenario Configuration
+# 20 m x 4 m arena with 2 alternating gate obstacles forcing true S-path.
+# Gate 1 (x=6): upper blocker -> robot passes BELOW (y < 1.683m with d_safe=0.3).
+# Gate 2 (x=14): lower blocker -> robot passes ABOVE (y > 2.317m with d_safe=0.3).
+# Wrong-side clearance = -0.017m (impassable). Correct-side = 1.983m.
+# Gate 1 is 5.5m from start: visible within N=9 horizon at x=4.2m.
+
+name: s_curve
+description: "S-curve slalom: 2 alternating gates, 20x4m arena. Wrong-side passage physically blocked."
+
+# World bounds: [xmin, ymin, xmax, ymax]
+bounds: [0.0, 0.0, 20.0, 4.0]
+
+# Start pose: [x, y, theta_rad]
+start: [0.5, 3.5, 0.0]
+
+# Goal position: [x, y]
+goal: [19.5, 0.5]
+
+# Obstacles: [cx, cy, radius] (metres)
+obstacles:
+  - [6.0,  3.7, 1.7]   # Gate 1: top blocker, bottom edge=1.8m, blocks center
+  - [14.0, 0.3, 1.7]   # Gate 2: bottom blocker, top edge=2.2m, blocks centerVE

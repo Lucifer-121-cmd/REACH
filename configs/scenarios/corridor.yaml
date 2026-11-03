@@ -1,0 +1,23 @@
+# Corridor Scenario Configuration
+# Straight 20 m × 4 m corridor with three staggered circular obstacles.
+# The robot must weave left-right to avoid the alternating lower/upper blockers.
+
+name: corridor
+description: "Straight corridor with 3 staggered obstacles"
+
+# World bounds: [xmin, ymin, xmax, ymax]
+bounds: [0.0, 0.0, 20.0, 4.0]
+
+# Start pose: [x, y, theta_rad]
+start: [0.5, 2.0, 0.0]
+
+# Goal position: [x, y]
+goal: [19.5, 2.0]
+
+# Obstacles: each entry is [cx, cy, radius] (metres)
+# Three obstacles staggered alternately below/above the centreline.
+# Passages are ≥1.3 m wide — well clear of the 0.5 m robot diameter.
+obstacles:
+  - [5.0,  1.0, 0.4]    # lower  (top edge y=1.4  → gap above: 1.4–4.0)
+  - [10.0, 3.0, 0.4]    # upper  (bottom edge y=2.6 → gap below: 0.0–2.6)
+  - [15.0, 1.0, 0.4]    # lower  (top edge y=1.4  → gap above: 1.4–4.0)

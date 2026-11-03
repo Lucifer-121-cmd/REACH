@@ -1,0 +1,31 @@
+{
+  "artifact": "stepchange_speeds.pdf",
+  "run_id": "?",
+  "generated_utc": "2026-09-15T17:31:31.431580+00:00",
+  "script": "22a_stepchange_figure.py",
+  "argv": [
+    "scripts/22a_stepchange_figure.py",
+    "--results",
+    "runs/run_20260910T174433Z/reach/stepchange/stepchange_results.json",
+    "--out",
+    "runs/run_20260910T174433Z/reach/stepchange/stepchange_speeds.pdf"
+  ],
+  "git": {
+    "commit": "b594c95a4e7b2b4b168c4aef8b02d285e7fbaddb",
+    "commit_short": "b594c95",
+    "branch": "main",
+    "dirty": false,
+    "dirty_files": []
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "runs/run_20260910T174433Z/reach/stepchange/stepchange_results.json",
+      "exists": true,
+      "sha256": "c4fffb8a6530b171e7da4701873f3063784f0c841399852575ae28c92c951e09",
+      "bytes": 409358
+    }
+  ],
+  "effective_config": {}
+}

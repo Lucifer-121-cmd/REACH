@@ -1,0 +1,199 @@
+{
+  "definition": "C \u2014 the threshold-return baseline: the published practice, swept.",
+  "gammas": [
+    1.0,
+    1.1,
+    1.2,
+    1.3,
+    1.5,
+    2.0
+  ],
+  "n_missions": 1800,
+  "wall_s": 55.8,
+  "summary": {
+    "nominal": {
+      "1.0": {
+        "n": 240,
+        "breaches": 77,
+        "breach_rate": 0.32083333333333336,
+        "docked_rate": 0.0,
+        "mean_reach_m": 14.522116986081604,
+        "per_map_breaches": {
+          "reach_train_20260911": 27,
+          "reach_train_20260912": 12,
+          "reach_train_20260913": 11,
+          "reach_train_20260914": 17,
+          "reach_train_20260915": 1,
+          "reach_train_20260916": 9
+        }
+      },
+      "1.1": {
+        "n": 240,
+        "breaches": 68,
+        "breach_rate": 0.2833333333333333,
+        "docked_rate": 0.0,
+        "mean_reach_m": 13.929423022700515,
+        "per_map_breaches": {
+          "reach_train_20260911": 12,
+          "reach_train_20260912": 11,
+          "reach_train_20260913": 6,
+          "reach_train_20260914": 12,
+          "reach_train_20260915": 5,
+          "reach_train_20260916": 22
+        }
+      },
+      "1.2": {
+        "n": 240,
+        "breaches": 74,
+        "breach_rate": 0.30833333333333335,
+        "docked_rate": 0.1375,
+        "mean_reach_m": 13.39489891254373,
+        "per_map_breaches": {
+          "reach_train_20260911": 7,
+          "reach_train_20260912": 5,
+          "reach_train_20260913": 19,
+          "reach_train_20260914": 14,
+          "reach_train_20260915": 17,
+          "reach_train_20260916": 12
+        }
+      },
+      "1.3": {
+        "n": 240,
+        "breaches": 26,
+        "breach_rate": 0.10833333333333334,
+        "docked_rate": 0.5166666666666667,
+        "mean_reach_m": 12.865318735856567,
+        "per_map_breaches": {
+          "reach_train_20260911": 5,
+          "reach_train_20260912": 10,
+          "reach_train_20260913": 6,
+          "reach_train_20260914": 0,
+          "reach_train_20260915": 5,
+          "reach_train_20260916": 0
+        }
+      },
+      "1.5": {
+        "n": 240,
+        "breaches": 1,
+        "breach_rate": 0.004166666666666667,
+        "docked_rate": 0.8916666666666667,
+        "mean_reach_m": 11.958320825331613,
+        "per_map_breaches": {
+          "reach_train_20260911": 0,
+          "reach_train_20260912": 0,
+          "reach_train_20260913": 0,
+          "reach_train_20260914": 0,
+          "reach_train_20260915": 1,
+          "reach_train_20260916": 0
+        }
+      },
+      "2.0": {
+        "n": 240,
+        "breaches": 0,
+        "breach_rate": 0.0,
+        "docked_rate": 0.9041666666666667,
+        "mean_reach_m": 10.331856975611036,
+        "per_map_breaches": {
+          "reach_train_20260911": 0,
+          "reach_train_20260912": 0,
+          "reach_train_20260913": 0,
+          "reach_train_20260914": 0,
+          "reach_train_20260915": 0,
+          "reach_train_20260916": 0
+        }
+      }
+    },
+    "mismatch+15": {
+      "1.0": {
+        "n": 60,
+        "breaches": 37,
+        "breach_rate": 0.6166666666666667,
+        "docked_rate": 0.0,
+        "mean_reach_m": 14.930365077138173,
+        "per_map_breaches": {
+          "reach_train_20260911": 9,
+          "reach_train_20260912": 8,
+          "reach_train_20260913": 8,
+          "reach_train_20260914": 2,
+          "reach_train_20260915": 5,
+          "reach_train_20260916": 5
+        }
+      },
+      "1.1": {
+        "n": 60,
+        "breaches": 31,
+        "breach_rate": 0.5166666666666667,
+        "docked_rate": 0.0,
+        "mean_reach_m": 14.401929410771519,
+        "per_map_breaches": {
+          "reach_train_20260911": 8,
+          "reach_train_20260912": 3,
+          "reach_train_20260913": 2,
+          "reach_train_20260914": 8,
+          "reach_train_20260915": 5,
+          "reach_train_20260916": 5
+        }
+      },
+      "1.2": {
+        "n": 60,
+        "breaches": 28,
+        "breach_rate": 0.4666666666666667,
+        "docked_rate": 0.0,
+        "mean_reach_m": 13.872150190157932,
+        "per_map_breaches": {
+          "reach_train_20260911": 7,
+          "reach_train_20260912": 5,
+          "reach_train_20260913": 0,
+          "reach_train_20260914": 5,
+          "reach_train_20260915": 5,
+          "reach_train_20260916": 6
+        }
+      },
+      "1.3": {
+        "n": 60,
+        "breaches": 25,
+        "breach_rate": 0.4166666666666667,
+        "docked_rate": 0.0,
+        "mean_reach_m": 13.429407345222597,
+        "per_map_breaches": {
+          "reach_train_20260911": 4,
+          "reach_train_20260912": 3,
+          "reach_train_20260913": 2,
+          "reach_train_20260914": 3,
+          "reach_train_20260915": 6,
+          "reach_train_20260916": 7
+        }
+      },
+      "1.5": {
+        "n": 60,
+        "breaches": 12,
+        "breach_rate": 0.2,
+        "docked_rate": 0.6666666666666666,
+        "mean_reach_m": 12.630052847935572,
+        "per_map_breaches": {
+          "reach_train_20260911": 0,
+          "reach_train_20260912": 3,
+          "reach_train_20260913": 0,
+          "reach_train_20260914": 0,
+          "reach_train_20260915": 9,
+          "reach_train_20260916": 0
+        }
+      },
+      "2.0": {
+        "n": 60,
+        "breaches": 0,
+        "breach_rate": 0.0,
+        "docked_rate": 0.9333333333333333,
+        "mean_reach_m": 11.090205986422282,
+        "per_map_breaches": {
+          "reach_train_20260911": 0,
+          "reach_train_20260912": 0,
+          "reach_train_20260913": 0,
+          "reach_train_20260914": 0,
+          "reach_train_20260915": 0,
+          "reach_train_20260916": 0
+        }
+      }
+    }
+  }
+}

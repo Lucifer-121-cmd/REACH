@@ -1,0 +1,109 @@
+# EP2-MPC Configuration (fallback — global_config.yaml is primary)
+# Keep this file identical to configs/global_config.yaml at all times.
+robot:
+  mass: 9.0
+  wheel_radius: 0.095
+  wheelbase: 0.330
+  max_v: 1.2
+  max_omega: 3.14159
+  max_dv: 0.5
+  max_domega: 1.0
+  collision_radius: 0.25
+  # Motor lag time constants (Pioneer 3-DX first-order response)
+  tau_v: 0.3        # linear velocity time constant (seconds)
+  tau_omega: 0.2     # angular velocity time constant (seconds)
+
+lidar:
+  n_rays: 36
+  max_range: 8.0
+  noise_std: 0.02
+
+energy_model:
+  c1: 2.5
+  c2: 0.8
+  c3: 0.3
+  c4: 1.2
+  c5: 3.0
+
+mpc:
+  dt: 0.1
+  N_min: 8
+  N_max: 50    # was 40
+  N_default: 12
+  ipopt_max_iter: 200
+  ipopt_tol: 1.0e-4
+  warm_start: true
+
+adaptive_horizon:
+  beta_d: 3.0
+  beta_e: 0.15
+  d_thresh_default: 1.0
+  dP_thresh_default: 10.0
+  w_power: 0.7
+
+default_weights:
+  w_p: 0.3
+  w_dP: 0.05
+  w_E: 0.3
+  w_omega: 0.05
+  w_d: 400.0
+  d_safe: 0.35
+  w_goal: 10.0
+  w_t: 0.3
+  w_du: 0.05
+
+evolution:
+  pop_size: 16
+  generations: 20
+  seed: 42                     # for reproducibility in an experiment, set a concrete integer (e.g., 42) otherwise- null
+
+  # HV reference point — calibrated from actual baseline performance (all 3 scenarios).
+  # Rule: max(baseline_metric_per_dim, across all scenarios) × 1.2, rounded up.
+  #   Energy:    max=221.7 J (s_curve energy_aware_mpc) × 1.2 = 266 → 270 J
+  #   Time:      max=43.5 s  (s_curve energy_aware_mpc) × 1.2 = 52  → 52  s
+  #   Solver ms: EP²-MPC worst-case with N=24 ≈ 400-500 ms, headroom → 600 ms
+  #   Failure:   1.0 (maximum possible, unchanged)
+  # Old value [5000, 30, 800, 1.0] was wrong: 5000 J is 20-100× actual baselines;
+  # 30 s excluded energy_aware_mpc on s_curve (43.5 s) from ever contributing to HV.
+
+  hv_reference: [270, 52, 600, 1.0]
+  stagnation_window: 3
+  stagnation_threshold: 0.001
+  injection_count: 6
+  sbx_eta: 15
+  mutation_eta: 20
+  cosine_similarity_threshold: 0.95
+  # D5 as amended: the reported genome must not have LLM provenance. The
+  # re-evolution of record (run_20260904T092518Z) ran pure NSGA-II, and
+  # scripts/18_reevolve_parallel.py force-overrides these to False/"random"
+  # regardless of what this file says. The llm/ prompt package was removed
+  # 2026-10-01, so enabling LLM here would crash on import.
+  llm_params_mode: "random"
+  use_llm_params: false
+
+llm:
+  # INERT since the 2026-10-01 cleanup removed the llm/ package
+  # (ollama_client.py, prompts_*.py). Kept only so historical run records
+  # that echo this section stay interpretable. Do not re-enable.
+  ollama_bin: "ollama"
+  model_strategy: "glm-4.7-flash"
+  model_params: "qwen3:14b"
+  # Separate URLs for strategy vs params LLM (Fix M2).
+  # Single-server (current): both localhost. Dual-server: set base_url_params
+  # to "http://192.168.137.2:11434" to route Qwen3 to Server 2.
+  base_url_strategy: "http://localhost:11434"   # GLM-4.7-Flash
+  base_url_params:   "http://localhost:11434"   # Qwen3:14b
+  timeout: 1200
+  max_retries: 3
+  availability_cache_ttl_sec: 30
+
+evaluation:
+  n_trials: 50
+  n_seeds: 5
+  timeout_per_trial: 60.0   # chicane path ~20m, 40s nominal, 60s safe margin
+
+# Since the 2026-10-01 cleanup removed results/, this fallback now fails
+# loudly (FileNotFoundError) instead of silently loading the wrong genome.
+# That is the intended behaviour: every §8 command passes an explicit
+# --evolution-root / --run-id, and you should too.
+results_dir: "results"

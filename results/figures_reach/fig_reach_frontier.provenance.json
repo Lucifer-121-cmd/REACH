@@ -1,0 +1,59 @@
+{
+  "artifact": "fig_reach_frontier.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-29T07:15:00.653794+00:00",
+  "script": "27_reach_figures.py",
+  "argv": [
+    "scripts/27_reach_figures.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "3b4648611ebe4b08b79f5e83a258e893851552f3",
+    "commit_short": "3b46486",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "aper/figures/fig_conservatism.pdf",
+      "paper/figures/fig_enforce.pdf",
+      "paper/figures/fig_gamma.pdf",
+      "paper/figures/fig_map_jfield.pdf",
+      "paper/figures/fig_power_model.pdf",
+      "paper/figures/fig_reach_frontier.pdf",
+      "paper/figures/fig_stepchange.pdf",
+      "paper/figures/fig_timing_survival.pdf",
+      "scripts/27_reach_figures.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/main3_adaptive_20260915/reach_trials_train.jsonl",
+      "exists": true,
+      "sha256": "65fbd500b7b945e58ac1b68b5b6bc4a2756aa124807784b46ace6a69adf2347a",
+      "bytes": 626637
+    }
+  ],
+  "effective_config": {},
+  "figure": "reach_frontier",
+  "source": "main3_adaptive_20260915",
+  "breaches_by_arm": {
+    "reach": [
+      0,
+      240
+    ],
+    "const_weight": [
+      19,
+      240
+    ],
+    "dual": [
+      18,
+      240
+    ],
+    "vmax_clip": [
+      0,
+      240
+    ]
+  }
+}

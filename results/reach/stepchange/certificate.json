@@ -1,0 +1,16 @@
+{
+  "map": "reach_stepchange",
+  "a_q": 53.54278417940472,
+  "slope": 1.0,
+  "denomination": "J",
+  "coverage_target": 0.95,
+  "coverage_achieved": 0.9499714530402512,
+  "n_states": 14424,
+  "n_reached": 14012,
+  "excess_mean": 23.490691428684595,
+  "excess_p50": 21.276975609620877,
+  "detour_p95": 1.2499973760860152,
+  "rollout_s": 13.9,
+  "terrain_adaptive": false,
+  "note": "a_q = quantile_q(V_fb - D_J) over sampled states; V_fb from a terrain-aware pi_fb rollout (pure pursuit at v* on the J-geodesic, same gains as the legacy fit); slope 1.0 because D_J already integrates the local floor"
+}

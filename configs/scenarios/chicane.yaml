@@ -1,0 +1,44 @@
+# ============================================================
+  # EP²-MPC Chicane Scenario
+  # ============================================================
+  # Two inward-facing large circular obstacles.
+  # Gate 1 (x=7, bottom-mounted): gap at TOP (y > 2.5m)
+  # Gate 2 (x=13, top-mounted):   gap at BOTTOM (y < 1.5m)
+  #
+  # Forced S-path:
+  #   START (0.5, 2.0) → rise y≈3.2 through Gate 1 top gap
+  #   → descend y≈0.8 through Gate 2 bottom gap
+  #   → GOAL (19.5, 2.0)
+  #
+  # Validates all 3 patent claims:
+  #   Claim 1 — energy state: predictive decel before each gate
+  #              reduces energy vs APF reactive braking
+  #   Claim 2 — adaptive horizon: N extends to 50 near each gate,
+  #              enabling gap discovery; N=10 (std MPC) is blind
+  #   Claim 3 — LLM evolution: finds weight set that balances
+  #              energy vs obstacle avoidance for S-path
+  #
+  # Method predictions:
+  #   EP²-MPC  — success, lowest energy (predictive path + speed)
+  #   APF      — success, +25-35% energy (reactive wide arcs)
+  #   Reactive — success, +30-40% energy (reactive)
+  #   Std MPC  — fails (N=10 lookahead 0.5m < gap displacement 1.25m)
+  #
+  # Geometry verification:
+  #   Gate 1 gap: y=2.5 to 4.0, width=1.5m, clearance=0.54m ✓
+  #   Gate 2 gap: y=0.0 to 1.5, width=1.5m, clearance=0.54m ✓
+  #   Direct path y=2.0 blocked: |2.0-1.0|=1.0 < r=1.5 ✓ (Gate 1)
+  #                               |2.0-3.0|=1.0 < r=1.5 ✓ (Gate 2)
+  #   Start/goal clear: nearest obstacle 6.5m away >> r+robot ✓
+  # ============================================================
+
+  name: chicane
+  description: "Chicane: two inward-facing gates forcing energy-intensive S-path. 20x4m arena."
+  bounds: [0.0, 0.0, 20.0, 4.0]
+  start: [0.5, 2.0, 0.0]
+  goal: [19.5, 2.0]
+  obstacles:
+    # Gate 1 (x=7.0): bottom-mounted, gap at TOP (y=2.5 to 4.0)
+    - [7.0, 1.0, 1.5]
+    # Gate 2 (x=13.0): top-mounted, gap at BOTTOM (y=0.0 to 1.5)
+    - [13.0, 3.0, 1.5]

@@ -1,0 +1,340 @@
+{
+  "artifact": "paired_campaign_tests.json",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-11T07:42:06.193191+00:00",
+  "script": "scripts/16_paired_campaign_tests.py",
+  "argv": [
+    "scripts/16_paired_campaign_tests.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "0a3c25438f634e630662b8074c5fb933d2395043",
+    "commit_short": "0a3c254",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "COMMIT_MESSAGE.md",
+      "README.md",
+      "REPRODUCE.md",
+      "RUNBOOK.md",
+      "env/pioneer_env.py",
+      "evaluation/baselines.py",
+      "evaluation/ep2_evaluator.py",
+      "evaluation/statistics.py",
+      "gitignore",
+      "mpc/ep2_mpc.py",
+      "mpc/reach_mpc.py",
+      "mpc/solver_opts.py",
+      "mpc/standard_mpc_casadi.py",
+      "planning/",
+      "prototypes/audit_vfb_decomposition.py",
+      "scripts/02_run_baselines.py",
+      "scripts/04_ablation.py",
+      "scripts/05_statistical_eval.py",
+      "scripts/07_figures.py",
+      "scripts/13_horizon_isolation.py",
+      "scripts/14_gate_r1_reach.py",
+      "scripts/15_tune_apf_baseline.py",
+      "scripts/16_paired_campaign_tests.py",
+      "scripts/17_tune_baselines.py",
+      "scripts/18_reevolve_parallel.py",
+      "scripts/19_reach_certificate.py",
+      "scripts/collect_trajectories.py",
+      "scripts/launch_campaign.sh",
+      "scripts/run_campaign.py",
+      "summarize_ablation.py",
+      "summarize_evolution.py",
+      "summarize_paper_tables.py",
+      "tests/test_baseline_lidar_seeding.py",
+      "tests/test_energy_dijkstra.py",
+      "tests/test_evolution_root_flag.py",
+      "tests/test_fig6_completeness.py",
+      "tests/test_issue_alignment_fixes.py",
+      "tests/test_paired_campaign_tests.py",
+      "tests/test_paper_tables_provenance.py",
+      "tests/test_paths_runs_root.py",
+      "tests/test_run_campaign.py",
+      "tests/test_solver_opts.py",
+      "tests/test_statistics_f7.py",
+      "utils/paths.py",
+      "utils/preflight.py",
+      "utils/provenance.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_apf_seed21000.jsonl",
+      "exists": true,
+      "sha256": "099a057fa0491f9a8102ffe1471a39fb327f6fccc4b235612f4a265234e9f290",
+      "bytes": 1542720
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_apf_seed22000.jsonl",
+      "exists": true,
+      "sha256": "c9728f88e5b4db6a5a71d84a7e0d2540269e28a32b529cd0a97e96c816e9925c",
+      "bytes": 1539878
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_apf_seed23000.jsonl",
+      "exists": true,
+      "sha256": "4098e455a27a7e1548ee916c6914a3334393ffdbbea968e2f3fee7ab914b084a",
+      "bytes": 1541736
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_apf_seed24000.jsonl",
+      "exists": true,
+      "sha256": "1015cb44aa852d341bea5c625fdfda4dce3d0ba13671361c04fabb8740859313",
+      "bytes": 1541482
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_apf_seed25000.jsonl",
+      "exists": true,
+      "sha256": "063176d18fa578c42ee03bacbcee29f22c4e9adecdfd0705c06251da11f761e5",
+      "bytes": 1539034
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_standard_mpc_casadi_seed21000.jsonl",
+      "exists": true,
+      "sha256": "a759ae176cc6e8aab97ed676777b036f787d508ea0d764c8a7dcc9b96193ca59",
+      "bytes": 996315
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_standard_mpc_casadi_seed22000.jsonl",
+      "exists": true,
+      "sha256": "f0088a38968a786f6df269b4f554d39c35f7d62742aaca951945dc089594fb64",
+      "bytes": 996242
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_standard_mpc_casadi_seed23000.jsonl",
+      "exists": true,
+      "sha256": "cc35370630e4b21d9b6ba6ba16231c34ea25234b4c49d46db0100ccc8399bfa9",
+      "bytes": 996441
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_standard_mpc_casadi_seed24000.jsonl",
+      "exists": true,
+      "sha256": "896cf587bd0c12194a281cccd37cdc59384148625edb3103b888ebbcf9358886",
+      "bytes": 996241
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_chicane_standard_mpc_casadi_seed25000.jsonl",
+      "exists": true,
+      "sha256": "22491a772d94e2f06dc57c980904c9f7e226d32eb2ac1c7fb931b02d13ba1adc",
+      "bytes": 995763
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_apf_seed1000.jsonl",
+      "exists": true,
+      "sha256": "3054672165ab123017f2775ecf295dacb9a357f8d573dc9b7c99dc0ab3255d4e",
+      "bytes": 1063435
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_apf_seed2000.jsonl",
+      "exists": true,
+      "sha256": "cc623324335b4035dd1ebec231e4ee8a69e195c83a0141a81a909768a9a071bf",
+      "bytes": 1067975
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_apf_seed3000.jsonl",
+      "exists": true,
+      "sha256": "febd4a587c530d3f112bb8ab64f0a23d5025a5a5e16bbd604d399bbe0c7902a9",
+      "bytes": 1067999
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_apf_seed4000.jsonl",
+      "exists": true,
+      "sha256": "521c15ea8fa59362eff69943c82ec2c29c206ad0002515429539931ba296977e",
+      "bytes": 1065759
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_apf_seed5000.jsonl",
+      "exists": true,
+      "sha256": "aae514e3c94795034a11b85bc3a4c5f24dd4e7b733b2dd62307e8743b568e21e",
+      "bytes": 1066125
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_standard_mpc_casadi_seed1000.jsonl",
+      "exists": true,
+      "sha256": "a4ac297da2c553d44543e2de781296ddff582c303671049ceae140b06faec183",
+      "bytes": 959181
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_standard_mpc_casadi_seed2000.jsonl",
+      "exists": true,
+      "sha256": "ba41c04a9fb2ce44e2ed9eab0ad2a316ec683af369f6c631b228338a9c2b52df",
+      "bytes": 959667
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_standard_mpc_casadi_seed3000.jsonl",
+      "exists": true,
+      "sha256": "ae25a214d2a43ab419553cb7128a81ec26ff9215c29d4637002f2d8e299748d0",
+      "bytes": 959845
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_standard_mpc_casadi_seed4000.jsonl",
+      "exists": true,
+      "sha256": "9c350036ae726cff06b9da935faa67390da74ab7f96654096e5dba3266e2fdbb",
+      "bytes": 959218
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_corridor_standard_mpc_casadi_seed5000.jsonl",
+      "exists": true,
+      "sha256": "b5105735c77be6222de6916ac980ce25fb63e643414cc75b54545cf2f56adcc7",
+      "bytes": 959051
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_apf_seed11000.jsonl",
+      "exists": true,
+      "sha256": "a4c345f08067d587c3ddb013016ba5b210f93913661526a6102fdc32cc51d325",
+      "bytes": 1586028
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_apf_seed12000.jsonl",
+      "exists": true,
+      "sha256": "c3469ebdb3397715bae1224cacdf052a5d035480cb77cc0f9c8ae755613a271d",
+      "bytes": 1588360
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_apf_seed13000.jsonl",
+      "exists": true,
+      "sha256": "351fd7042e2cacbae547280f7f6f9badd5e985c863aeb24bbea194811810e713",
+      "bytes": 1586378
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_apf_seed14000.jsonl",
+      "exists": true,
+      "sha256": "1c9b60e6c37044514eef82fb8620af7b1529ab59abed8886080f8a1fddf2f664",
+      "bytes": 1586582
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_apf_seed15000.jsonl",
+      "exists": true,
+      "sha256": "6d7ad9e4944047d9a6cf341a9c3c87690431a8f4a610196ee220eba0ff583af8",
+      "bytes": 1586688
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_standard_mpc_casadi_seed11000.jsonl",
+      "exists": true,
+      "sha256": "73f7a482bbc811947e00a386a6d53434c864682535277b89f39b535710f876ed",
+      "bytes": 1050567
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_standard_mpc_casadi_seed12000.jsonl",
+      "exists": true,
+      "sha256": "1457ab864b0f2d06184221ae6931c70b9637cf66131a18365dd95d79ad91a177",
+      "bytes": 1051588
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_standard_mpc_casadi_seed13000.jsonl",
+      "exists": true,
+      "sha256": "b9924220371d2383ad49f60063a6046c2ffdc921e8609a75bbd9a48b35c43cdf",
+      "bytes": 1051038
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_standard_mpc_casadi_seed14000.jsonl",
+      "exists": true,
+      "sha256": "966741ed2a7e38b0205b6306bc01c8bdd97eb5bab437f6b5bfddb1ad3705074e",
+      "bytes": 1050906
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/baselines/trials_s_curve_standard_mpc_casadi_seed15000.jsonl",
+      "exists": true,
+      "sha256": "f68ef4e5b6f692130eefc041dbd0d6563f7fbfba778c2cfb4fe4dc4c5e6c0488",
+      "bytes": 1051174
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_chicane_ep2mpc_seed21000.jsonl",
+      "exists": true,
+      "sha256": "d344f153fd65f3440b69caa085d1ebb940091d462372e9dcaf1a349e0e40cb46",
+      "bytes": 20367655
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_chicane_ep2mpc_seed22000.jsonl",
+      "exists": true,
+      "sha256": "668685b982d9d100de618114740466f1c094e260b425979dda87ccd064c864f1",
+      "bytes": 20368491
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_chicane_ep2mpc_seed23000.jsonl",
+      "exists": true,
+      "sha256": "5888333a097f158795264b6bff3a2c95ae8c5feb26f2fa7d64fc581da5e9ace5",
+      "bytes": 20365335
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_chicane_ep2mpc_seed24000.jsonl",
+      "exists": true,
+      "sha256": "a6f8e3044c99b71c442a1159fdf06d9d26fafbf16c46b5dc4c5ebd2f4f02e276",
+      "bytes": 20364882
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_chicane_ep2mpc_seed25000.jsonl",
+      "exists": true,
+      "sha256": "68b41d7ec440e868e922445914d33f26b4e6342e99d34b1f0586ed2a8ba45b5a",
+      "bytes": 20355534
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_corridor_ep2mpc_seed1000.jsonl",
+      "exists": true,
+      "sha256": "397295a2fcc0922da36d38722856d9226ef976009a2ca3c535b339662f9f1e4f",
+      "bytes": 19605442
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_corridor_ep2mpc_seed2000.jsonl",
+      "exists": true,
+      "sha256": "bd87f0444861c5ae69c6655ee79d27c52eacd09c749f21e0f6a346011d11fc72",
+      "bytes": 19609961
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_corridor_ep2mpc_seed3000.jsonl",
+      "exists": true,
+      "sha256": "bdeff1f1250a29769e79083c49ff58719aac86dcb279e0ec0fbee694f43fdb23",
+      "bytes": 19611648
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_corridor_ep2mpc_seed4000.jsonl",
+      "exists": true,
+      "sha256": "aff63c73e9db562330a18c9d34ef3c617f50cfd65d6095bddb69503557102b9b",
+      "bytes": 19603406
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_corridor_ep2mpc_seed5000.jsonl",
+      "exists": true,
+      "sha256": "73be8d6930e0cbf8c9b156777b0f6aa6b906f95796d27cc6e28dc478b3dab122",
+      "bytes": 19607840
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_s_curve_ep2mpc_seed11000.jsonl",
+      "exists": true,
+      "sha256": "868baa5410dbac832a04fea5b4a7c921a1a68d71c2f58e32933f1916f8552f74",
+      "bytes": 22843834
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_s_curve_ep2mpc_seed12000.jsonl",
+      "exists": true,
+      "sha256": "c5e6f7754d81362b4d8ec546c572aa3195e027a2c24bca1cf325658f8dd6aedd",
+      "bytes": 22853741
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_s_curve_ep2mpc_seed13000.jsonl",
+      "exists": true,
+      "sha256": "f7af89592eb9704c584a9b81c707fa58c8ddbf7b353e58f49bfc79060b466681",
+      "bytes": 22841156
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_s_curve_ep2mpc_seed14000.jsonl",
+      "exists": true,
+      "sha256": "b8b8539c37dbb299ea3856b7001a9edf0a9843808a800dafe938cec8232c8d1b",
+      "bytes": 22838016
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/ep2/trials_s_curve_ep2mpc_seed15000.jsonl",
+      "exists": true,
+      "sha256": "3db988a5e85f5bc45c98a93cdc13949e85672a3bdb645b7248fb678c76defe85",
+      "bytes": 22854797
+    }
+  ],
+  "effective_config": {}
+}

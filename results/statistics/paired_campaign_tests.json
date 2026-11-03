@@ -1,0 +1,663 @@
+{
+  "run_id": "run_20260910T174433Z",
+  "n_pairs_per_cell": 1250,
+  "why": "05_statistical_eval.py runs its inferential tests on one master seed (n=50) while reporting total_trials over all seeds. These use ALL seed-aligned pairs from the campaign JSONL (n recorded per cell; the Sep-2026 campaigns run 250 trials x 5 seed blocks = 1250 pairs per scenario per arm).",
+  "observed_n_pairs": [
+    1250
+  ],
+  "pairable_arms": [
+    "apf",
+    "standard_mpc_casadi"
+  ],
+  "unpairable_note": "energy_penalized_mpc and standard_mpc_casadi[N=24|50] are NOT here: they come from 02_run_baselines.py at a different master seed, so no trial-level correspondence with the EP2 campaign exists.",
+  "power": {
+    "sigma_E_range_per_trial": [
+      0.62,
+      0.69
+    ],
+    "target_effect_J": 0.16,
+    "n_required_at_sigma_low": 236,
+    "n_required_at_sigma_high": 292,
+    "n_used_in_rejected_paper": 50,
+    "underpowered_factor_range": [
+      4.7,
+      5.8
+    ],
+    "note": "Every headline energy comparison in 26-3816v1 ran at n = 50 paired trials against an effect of 0.16 J with a per-trial sigma of 0.62-0.69 J: underpowered by roughly 5x. PLAN.md F7 quotes n ~= 240, which is the sigma = 0.62 end of this range."
+  },
+  "scenarios": {
+    "corridor": {
+      "arms": {
+        "apf": {
+          "scenario": "corridor",
+          "arm": "apf",
+          "n_pairs": 1250,
+          "master_seeds": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 126.55664133209073,
+            "base_mean": 135.2057576413217,
+            "ep2_std": 0.6074650206962632,
+            "base_std": 0.61158674639477,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -8.649116309230969,
+              "ci_low": -8.669867370976295,
+              "ci_high": -8.628663858153265,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 6.3970029532141846,
+            "tost_vs_target_effect": {
+              "mean_diff": -8.649116309230969,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.010569831342012682
+            }
+          },
+          "time": {
+            "ep2_mean": 16.077920000000002,
+            "base_mean": 17.002,
+            "ep2_std": 0.08531293124133979,
+            "base_std": 0.07435336400049776,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -0.9240800000000005,
+              "ci_low": -0.9273600000000006,
+              "ci_high": -0.9208000000000007,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 5.435125279378876
+          }
+        },
+        "standard_mpc_casadi": {
+          "scenario": "corridor",
+          "arm": "standard_mpc_casadi",
+          "n_pairs": 1250,
+          "master_seeds": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 126.55664133209073,
+            "base_mean": 127.0656226699607,
+            "ep2_std": 0.6074650206962632,
+            "base_std": 0.5857274582357869,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -0.41503744,
+            "effect": "medium",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -0.5089813378699737,
+              "ci_low": -0.5200144198544124,
+              "ci_high": -0.49821218809161083,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 0.4005657290894431,
+            "tost_vs_target_effect": {
+              "mean_diff": -0.5089813378699737,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.005469108022462211
+            }
+          },
+          "time": {
+            "ep2_mean": 16.077920000000002,
+            "base_mean": 16.48152,
+            "ep2_std": 0.08531293124133979,
+            "base_std": 0.07678024332216997,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -0.4036000000000006,
+              "ci_low": -0.40680000000000066,
+              "ci_high": -0.4004800000000007,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 2.448803265718194
+          }
+        }
+      },
+      "holm_energy_family": {
+        "alpha": 0.05,
+        "family_size": 2,
+        "n_rejected": 2,
+        "results": {
+          "apf": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 1
+          },
+          "standard_mpc_casadi": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 2
+          }
+        }
+      },
+      "holm_note": "p-values clamped to the exact test resolution floor (2/2^n_nonzero) before correction; scipy underflows to 0.0 at n=250 for an all-one-sign difference",
+      "family_declaration": "one family per scenario per metric: the pairable campaign arms compared against EP2-MPC on that map"
+    },
+    "s_curve": {
+      "arms": {
+        "apf": {
+          "scenario": "s_curve",
+          "arm": "apf",
+          "n_pairs": 1250,
+          "master_seeds": [
+            11000,
+            12000,
+            13000,
+            14000,
+            15000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 136.48550637527384,
+            "base_mean": 158.6168329236119,
+            "ep2_std": 0.701554593773344,
+            "base_std": 2.05378888489091,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -22.13132654833807,
+              "ci_low": -22.228367577580745,
+              "ci_high": -22.035494307798235,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 13.952697289698285,
+            "tost_vs_target_effect": {
+              "mean_diff": -22.13132654833807,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.049153497683543275
+            }
+          },
+          "time": {
+            "ep2_mean": 18.9764,
+            "base_mean": 26.673360000000002,
+            "ep2_std": 0.1380227525597841,
+            "base_std": 0.2766650415867335,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -7.696960000000001,
+              "ci_low": -7.7124,
+              "ci_high": -7.68128,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 28.85635705437935
+          }
+        },
+        "standard_mpc_casadi": {
+          "scenario": "s_curve",
+          "arm": "standard_mpc_casadi",
+          "n_pairs": 1250,
+          "master_seeds": [
+            11000,
+            12000,
+            13000,
+            14000,
+            15000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 136.48550637527384,
+            "base_mean": 137.16031158440197,
+            "ep2_std": 0.701554593773344,
+            "base_std": 0.652786848659596,
+            "wilcoxon": {
+              "statistic": 1489.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -0.50699776,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -0.6748052091281525,
+              "ci_low": -0.6898122349650085,
+              "ci_high": -0.6598301390659094,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 0.49198284936301023,
+            "tost_vs_target_effect": {
+              "mean_diff": -0.6748052091281525,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.007680952177545771
+            }
+          },
+          "time": {
+            "ep2_mean": 18.9764,
+            "base_mean": 18.364960000000004,
+            "ep2_std": 0.1380227525597841,
+            "base_std": 0.08115088892562287,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": 1.0,
+            "effect": "large",
+            "ep2_better": false,
+            "paired_diff_ci95": {
+              "mean_diff": 0.61144,
+              "ci_low": 0.60488,
+              "ci_high": 0.61808,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": -3.329383783030282
+          }
+        }
+      },
+      "holm_energy_family": {
+        "alpha": 0.05,
+        "family_size": 2,
+        "n_rejected": 2,
+        "results": {
+          "apf": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 1
+          },
+          "standard_mpc_casadi": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 2
+          }
+        }
+      },
+      "holm_note": "p-values clamped to the exact test resolution floor (2/2^n_nonzero) before correction; scipy underflows to 0.0 at n=250 for an all-one-sign difference",
+      "family_declaration": "one family per scenario per metric: the pairable campaign arms compared against EP2-MPC on that map"
+    },
+    "chicane": {
+      "arms": {
+        "apf": {
+          "scenario": "chicane",
+          "arm": "apf",
+          "n_pairs": 1250,
+          "master_seeds": [
+            21000,
+            22000,
+            23000,
+            24000,
+            25000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 131.60870146103937,
+            "base_mean": 157.4491110873413,
+            "ep2_std": 0.6352749954859822,
+            "base_std": 1.7591297961659422,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -25.84040962630189,
+              "ci_low": -25.923836464227676,
+              "ci_high": -25.756747741655378,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 16.41191204437321,
+            "tost_vs_target_effect": {
+              "mean_diff": -25.84040962630189,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.04244780097184018
+            }
+          },
+          "time": {
+            "ep2_mean": 16.897440000000003,
+            "base_mean": 25.79944,
+            "ep2_std": 0.07979059864235472,
+            "base_std": 0.3614639835019463,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -1.0,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -8.902,
+              "ci_low": -8.92072,
+              "ci_high": -8.88336,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 34.50462490658711
+          }
+        },
+        "standard_mpc_casadi": {
+          "scenario": "chicane",
+          "arm": "standard_mpc_casadi",
+          "n_pairs": 1250,
+          "master_seeds": [
+            21000,
+            22000,
+            23000,
+            24000,
+            25000
+          ],
+          "ep2_success_rate": 1.0,
+          "base_success_rate": 1.0,
+          "mcnemar_success": {
+            "b10": 0,
+            "b01": 0,
+            "n_discordant": 0,
+            "n_pairs": 1250,
+            "p_value": 1.0,
+            "rate_a": 1.0,
+            "rate_b": 1.0,
+            "p_floor": 1.0,
+            "p_text": "p = 1.000"
+          },
+          "both_arms_100pc": true,
+          "energy": {
+            "ep2_mean": 131.60870146103937,
+            "base_mean": 133.5015308894431,
+            "ep2_std": 0.6352749954859822,
+            "base_std": 0.6560645465580378,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -0.97523584,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -1.8928294284037368,
+              "ci_low": -1.8996743129640656,
+              "ci_high": -1.8857627654933093,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 1.4178335003298517,
+            "tost_vs_target_effect": {
+              "mean_diff": -1.8928294284037368,
+              "margin": 0.16,
+              "alpha": 0.05,
+              "p_lower": 1.0,
+              "p_upper": 0.0,
+              "p_tost": 1.0,
+              "equivalent": false,
+              "n_pairs": 1250,
+              "se": 0.00362025805205268
+            }
+          },
+          "time": {
+            "ep2_mean": 16.897440000000003,
+            "base_mean": 17.19192,
+            "ep2_std": 0.07979059864235472,
+            "base_std": 0.0823415916178944,
+            "wilcoxon": {
+              "statistic": 0.0,
+              "p_value": 0.0,
+              "n_pairs": 1250,
+              "n_nonzero": 1250,
+              "p_floor": 5e-324,
+              "at_resolution_floor": true,
+              "method": "exact",
+              "p_text": "p < 5e-324 (exact-test resolution limit, n=1250)"
+            },
+            "cliffs_delta": -0.9905536,
+            "effect": "large",
+            "ep2_better": true,
+            "paired_diff_ci95": {
+              "mean_diff": -0.2944799999999992,
+              "ci_low": -0.2958399999999992,
+              "ci_high": -0.2930399999999992,
+              "n_pairs": 1250,
+              "conf": 0.95,
+              "n_boot": 10000
+            },
+            "pct_vs_base": 1.7128976868203
+          }
+        }
+      },
+      "holm_energy_family": {
+        "alpha": 0.05,
+        "family_size": 2,
+        "n_rejected": 2,
+        "results": {
+          "apf": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 1
+          },
+          "standard_mpc_casadi": {
+            "p_raw": 5e-324,
+            "p_adjusted": 1e-323,
+            "reject": true,
+            "rank": 2
+          }
+        }
+      },
+      "holm_note": "p-values clamped to the exact test resolution floor (2/2^n_nonzero) before correction; scipy underflows to 0.0 at n=250 for an all-one-sign difference",
+      "family_declaration": "one family per scenario per metric: the pairable campaign arms compared against EP2-MPC on that map"
+    }
+  }
+}

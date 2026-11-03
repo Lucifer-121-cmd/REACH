@@ -1,0 +1,42 @@
+{
+  "artifact": "fig_map_jfield.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-29T07:15:05.292160+00:00",
+  "script": "27_reach_figures.py",
+  "argv": [
+    "scripts/27_reach_figures.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "3b4648611ebe4b08b79f5e83a258e893851552f3",
+    "commit_short": "3b46486",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "aper/figures/fig_conservatism.pdf",
+      "paper/figures/fig_enforce.pdf",
+      "paper/figures/fig_gamma.pdf",
+      "paper/figures/fig_map_jfield.pdf",
+      "paper/figures/fig_power_model.pdf",
+      "paper/figures/fig_reach_frontier.pdf",
+      "paper/figures/fig_stepchange.pdf",
+      "paper/figures/fig_timing_survival.pdf",
+      "scripts/27_reach_figures.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach_maps/train/reach_train_20260911.yaml",
+      "exists": true,
+      "sha256": "faabe218dbd6c7ed19f43c1a210557105d8d855de52ded12331088f6bd3819ae",
+      "bytes": 829
+    }
+  ],
+  "effective_config": {},
+  "figure": "map_jfield",
+  "a_q": 26.604716013765113,
+  "B": 289.0
+}

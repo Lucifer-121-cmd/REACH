@@ -1,0 +1,412 @@
+% refs.bib — fresh bibliography for the REACH T-CST manuscript (W7).
+% Built 2026-10-01 from lit_positioning_w7.md leads. Every entry was
+% verified against the actual paper or its arXiv/DOI record during the
+% pre-writing audit (arXiv abstracts pulled; DOIs web-verified).
+% Zero reuse from the archived RA-L submission's bibliography.
+
+% ---------------- F2: mission class / threshold-homing family --------
+
+@article{notomista2021persistification,
+  author  = {Notomista, Gennaro and Egerstedt, Magnus},
+  title   = {Persistification of Robotic Tasks},
+  journal = {IEEE Transactions on Control Systems Technology},
+  volume  = {29},
+  number  = {2},
+  pages   = {756--767},
+  year    = {2021},
+  doi     = {10.1109/TCST.2020.2978913}
+}
+
+@inproceedings{cortes2022task,
+  author    = {Jimenez Cortes, Carmen and Egerstedt, Magnus},
+  title     = {Task Persistification for Robots with Control-Dependent
+               Energy Dynamics},
+  booktitle = {Proc.\ IEEE International Conference on Robotics and
+               Automation (ICRA)},
+  year      = {2022},
+  doi       = {10.1109/ICRA46639.2022.9812208}
+}
+
+@inproceedings{huang2015adaptive,
+  author    = {Huang, Yu-Te and Ho, Yao-Hua and Chu, Hao-hua and
+               Chen, Ling-Jyh},
+  title     = {Adaptive Drone Sensing with Always Return-To-Home
+               Guaranteed},
+  booktitle = {Proc.\ 1st International Workshop on Experiences with
+               the Design and Implementation of Smart Objects
+               (SmartObjects@MobiCom)},
+  location  = {Paris, France},
+  pages     = {7--12},
+  year      = {2015},
+  doi       = {10.1145/2797044.2797054}
+}
+
+@misc{li2026robust,
+  author        = {Li, Tianshun and Lu, Hongliang and Sheng, Yanggang
+                   and Wang, Zhongzhen and Li, Haoang and Zheng, Xinhu},
+  title         = {Robust Energy-Aware Routing for Air-Ground
+                   Cooperative Multi-{UAV} Delivery in Wind-Uncertain
+                   Environments},
+  year          = {2026},
+  eprint        = {2604.13441},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.RO},
+  howpublished  = {arXiv:2604.13441}
+}
+
+% ---------------- F1: battery models inside MPC ---------------------
+
+@misc{gupta2026bcnmpc,
+  author        = {Gupta, Parakh M. and Mihulka, Matej and
+                   Novosad, Matej and Penicka, Robert and Saska, Martin},
+  title         = {{BC-NMPC}: Battery-Constrained {NMPC} with Propulsion
+                   Prediction and Replanning for High-Speed Flight},
+  year          = {2026},
+  eprint        = {2607.23867},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.RO},
+  howpublished  = {arXiv:2607.23867}
+}
+
+@misc{kidambi2026battery,
+  author        = {Kidambi, Krishna Bhavithavya},
+  title         = {Battery-Aware Predictive Trajectory Planning and
+                   Control for Multirotors Under Disturbances},
+  year          = {2026},
+  eprint        = {2609.12188},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.RO},
+  howpublished  = {arXiv:2609.12188}
+}
+
+% ---------------- F3: viability / governors -------------------------
+
+@misc{bertoni2026viability,
+  author        = {Bertoni, Massimiliano and Piccina, Alberto and
+                   Lunardi, Gianni and Fontanari, Elias and
+                   Del Prete, Andrea and Cenedese, Angelo and
+                   Michieletto, Giulia},
+  title         = {Towards Safe and Optimal Flight: Viability Kernel
+                   {MPC} for Fully Actuated Multirotor},
+  year          = {2026},
+  eprint        = {2608.25459},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.RO},
+  howpublished  = {arXiv:2608.25459}
+}
+
+@article{garone2017reference,
+  author  = {Garone, Emanuele and Di Cairano, Stefano and
+             Kolmanovsky, Ilya V.},
+  title   = {Reference and Command Governors for Systems with
+             Constraints: A Survey on Theory and Applications},
+  journal = {Automatica},
+  volume  = {75},
+  pages   = {306--328},
+  year    = {2017}
+}
+
+% ---------------- F5: policy-derived terminal ingredients -------------
+
+@misc{msaad2026policy,
+  author        = {Msaad, Salim and McAllister, Robert D.},
+  title         = {Economic Model Predictive Control with Policy-Guided
+                   Terminal Ingredients},
+  year          = {2026},
+  eprint        = {2609.02628},
+  archiveprefix = {arXiv},
+  primaryclass  = {eess.SY},
+  howpublished  = {arXiv:2609.02628}
+}
+
+% ---------------- Power-model provenance ------------------------------
+
+@article{jaiem2021energy,
+  author  = {Jaiem, Lotfi and Crestani, Didier and Lapierre, Lionel and
+             Druon, S{\'e}bastien},
+  title   = {Energy Consumption of Control Schemes for the {Pioneer 3DX}
+             Mobile Robot: Models and Evaluation},
+  journal = {Journal of Intelligent and Robotic Systems: Theory and
+             Applications},
+  volume  = {102},
+  number  = {1},
+  pages   = {23},
+  year    = {2021},
+  doi     = {10.1007/s10846-021-01374-6}
+}
+
+% ---------------- Foundational / tooling --------------------------------
+
+@book{rawlings2017mpc,
+  author    = {Rawlings, James B. and Mayne, David Q. and
+               Diehl, Moritz M.},
+  title     = {Model Predictive Control: Theory, Computation, and
+               Design},
+  edition   = {2nd},
+  publisher = {Nob Hill Publishing},
+  address   = {Madison, WI},
+  year      = {2017}
+}
+
+@article{andersson2019casadi,
+  author  = {Andersson, Joel A. E. and Gillis, Joris and Horn, Greg and
+             Rawlings, James B. and Diehl, Moritz},
+  title   = {{CasADi} -- a Software Framework for Nonlinear
+             Optimization and Optimal Control},
+  journal = {Mathematical Programming Computation},
+  volume  = {11},
+  number  = {1},
+  pages   = {1--36},
+  year    = {2019}
+}
+
+@article{waechter2006ipopt,
+  author  = {W{\"a}chter, Andreas and Biegler, Lorenz T.},
+  title   = {On the Implementation of an Interior-Point Filter
+             Line-Search Algorithm for Large-Scale Nonlinear
+             Programming},
+  journal = {Mathematical Programming},
+  volume  = {106},
+  number  = {1},
+  pages   = {25--57},
+  year    = {2006}
+}
+
+% ---------------- MPC / invariance classics (added in the editorial
+% audit pass, each verified against its published record) ----------------
+
+@article{mayne2000constrained,
+  author  = {Mayne, David Q. and Rawlings, James B. and
+             Rao, Christopher V. and Scokaert, Peter O. M.},
+  title   = {Constrained Model Predictive Control: Stability and
+             Optimality},
+  journal = {Automatica},
+  volume  = {36},
+  number  = {6},
+  pages   = {789--814},
+  year    = {2000},
+  doi     = {10.1016/S0005-1098(99)00214-9}
+}
+
+@article{chen1998quasi,
+  author  = {Chen, Hong and Allg{\"o}wer, Frank},
+  title   = {A Quasi-Infinite Horizon Nonlinear Model Predictive Control
+             Scheme with Guaranteed Stability},
+  journal = {Automatica},
+  volume  = {34},
+  number  = {10},
+  pages   = {1205--1217},
+  year    = {1998},
+  doi     = {10.1016/S0005-1098(98)00073-9}
+}
+
+@article{blanchini1999set,
+  author  = {Blanchini, Franco},
+  title   = {Set Invariance in Control},
+  journal = {Automatica},
+  volume  = {35},
+  number  = {11},
+  pages   = {1747--1767},
+  year    = {1999}
+}
+
+@inproceedings{ames2019control,
+  author    = {Ames, Aaron D. and Coogan, Magnus and
+               Quadrari, Gennaro and Tabuada, Paulo},
+  title     = {Control Barrier Functions: Theory and Applications},
+  booktitle = {Proc.\ 18th European Control Conference (ECC)},
+  location  = {Naples, Italy},
+  pages     = {3420--3431},
+  year      = {2019}
+}
+
+@article{scattolini2009architectures,
+  author  = {Scattolini, Riccardo},
+  title   = {Architectures for Distributed and Hierarchical Model
+             Predictive Control -- A Review},
+  journal = {Journal of Process Control},
+  volume  = {19},
+  number  = {5},
+  pages   = {723--731},
+  year    = {2009},
+  doi     = {10.1016/j.jprocont.2009.02.003}
+}
+
+@article{ellis2014tutorial,
+  author  = {Ellis, Matthew and Durand, Helen and
+             Christofides, Panagiotis D.},
+  title   = {A Tutorial Review of Economic Model Predictive Control
+             Methods},
+  journal = {Journal of Process Control},
+  volume  = {24},
+  number  = {8},
+  pages   = {1156--1178},
+  year    = {2014},
+  doi     = {10.1016/j.jprocont.2014.03.010}
+}
+
+% ---------------- persistent autonomy under energy limits -----------
+
+@article{smith2012persistent,
+  author  = {Smith, Stephen L. and Schwager, Mac and Rus, Daniela},
+  title   = {Persistent Robotic Tasks: Monitoring and Sweeping in
+             Changing Environments},
+  journal = {IEEE Transactions on Robotics},
+  volume  = {28},
+  number  = {2},
+  pages   = {410--426},
+  year    = {2012}
+}
+
+@inproceedings{mitchell2015multirobot,
+  author    = {Mitchell, Derek and Corah, Micah and
+               Chakraborty, Nilanjan and Sycara, Katia and
+               Michael, Nathan},
+  title     = {Multi-Robot Long-Term Persistent Coverage with Fuel
+               Constrained Robots},
+  booktitle = {Proc.\ IEEE International Conference on Robotics and
+               Automation (ICRA)},
+  location  = {Seattle, WA},
+  pages     = {1093--1099},
+  year      = {2015}
+}
+
+@article{mathew2015multirobot,
+  author  = {Mathew, Neil and Smith, Stephen L. and
+             Waslander, Steven L.},
+  title   = {Multirobot Rendezvous Planning for Recharging in
+             Persistent Tasks},
+  journal = {IEEE Transactions on Robotics},
+  volume  = {31},
+  number  = {1},
+  pages   = {128--142},
+  year    = {2015}
+}
+
+% ---------------- scenario approach / stochastic MPC (theory anchors) ----
+
+@article{calafiore2006scenario,
+  author  = {Calafiore, Giuseppe C. and Campi, Maria C.},
+  title   = {The Scenario Approach to Robust Control Design},
+  journal = {IEEE Transactions on Automatic Control},
+  volume  = {51},
+  number  = {5},
+  pages   = {742--753},
+  year    = {2006},
+  doi     = {10.1109/TAC.2006.875041}
+}
+
+@article{schildbach2014scenario,
+  author  = {Schildbach, Georg and Fagiano, Lorenzo and Frei, Colin and
+             Morari, Manfred},
+  title   = {The Scenario Approach for Stochastic Model Predictive Control
+             with Bounds on Closed-Loop Constraint Violations},
+  journal = {Automatica},
+  volume  = {50},
+  number  = {12},
+  pages   = {3009--3018},
+  year    = {2014},
+  doi     = {10.1016/j.automatica.2014.10.035}
+}
+
+@article{mesbah2016stochastic,
+  author  = {Mesbah, Ali},
+  title   = {Stochastic Model Predictive Control: An Overview and
+             Perspectives for Future Research},
+  journal = {IEEE Control Systems Magazine},
+  volume  = {36},
+  number  = {6},
+  pages   = {30--44},
+  year    = {2016},
+  doi     = {10.1109/MCS.2016.2602087}
+}
+
+% ---------------- conformal prediction / distribution-free bounds ------
+
+@article{lindemann2023safe,
+  author  = {Lindemann, Lars and Cleaveland, Matthew and Shim, Gihyun and
+             Pappas, George J.},
+  title   = {Safe Planning in Dynamic Environments Using Conformal
+             Prediction},
+  journal = {IEEE Robotics and Automation Letters},
+  volume  = {8},
+  number  = {8},
+  pages   = {5116--5123},
+  year    = {2023},
+  doi     = {10.1109/LRA.2023.3292071}
+}
+
+% ---------------- learning MPC / data-driven terminal ingredients ------
+
+@article{rosolia2018learning,
+  author  = {Rosolia, Ugo and Borrelli, Francesco},
+  title   = {Learning Model Predictive Control for Iterative Tasks: A
+             Data-Driven Control Framework},
+  journal = {IEEE Transactions on Automatic Control},
+  volume  = {63},
+  number  = {7},
+  pages   = {1883--1896},
+  year    = {2018},
+  doi     = {10.1109/TAC.2017.2753460}
+}
+
+% ---------------- reachability / probabilistic navigation ---------------
+
+@article{quann2019chance,
+  author  = {Quann, Michael and Ojeda, Luis and Smith, William and
+             Rizzo, Donald and Castanier, Matthew and Barton, Kira},
+  title   = {Chance Constrained Reachability in Environments with
+             Spatially Varying Energy Costs},
+  journal = {Robotics and Autonomous Systems},
+  volume  = {119},
+  pages   = {1--12},
+  year    = {2019},
+  doi     = {10.1016/j.robot.2019.05.009}
+}
+
+@inproceedings{bansal2017hamilton,
+  author    = {Bansal, Somil and Chen, Mo and Herbert, Sylvia L. and
+               Tomlin, Claire J.},
+  title     = {Hamilton-Jacobi Reachability: A Brief Overview and Recent
+               Advances},
+  booktitle = {Proc.\ 56th IEEE Conference on Decision and Control (CDC)},
+  pages     = {2242--2253},
+  year      = {2017},
+  doi       = {10.1109/CDC.2017.8263977}
+}
+
+@article{blackmore2011chance,
+  author  = {Blackmore, Lars and Ono, Masahiro and Williams, Brian C.},
+  title   = {Chance-Constrained Optimal Path Planning with Obstacles},
+  journal = {IEEE Transactions on Robotics},
+  volume  = {27},
+  number  = {6},
+  pages   = {1080--1094},
+  year    = {2011},
+  doi     = {10.1109/TRO.2011.2161160}
+}
+
+% ---------------- persistent autonomy with energy limits --------------
+
+@article{lin2022robust,
+  author  = {Lin, Xiang and Yazioglu, Yasin and Aksaray, Derya},
+  title   = {Robust Planning for Persistent Surveillance with
+             Energy-Constrained {UAVs} and Mobile Charging Stations},
+  journal = {IEEE Robotics and Automation Letters},
+  volume  = {7},
+  number  = {2},
+  pages   = {4157--4164},
+  year    = {2022},
+  doi     = {10.1109/LRA.2022.3146938}
+}
+
+@article{asghar2025multirobot,
+  author  = {Asghar, Abeer B. and Sundaram, Shreyas and Smith, Stephen L.},
+  title   = {Multirobot Persistent Monitoring: Minimizing Latency and
+             Number of Robots with Recharging Constraints},
+  journal = {IEEE Transactions on Robotics},
+  volume  = {41},
+  pages   = {236--252},
+  year    = {2025},
+  doi     = {10.1109/TRO.2024.3502497}
+}

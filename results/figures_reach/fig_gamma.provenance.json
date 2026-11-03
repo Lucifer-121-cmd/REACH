@@ -1,0 +1,95 @@
+{
+  "artifact": "fig_gamma.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-09-29T07:15:03.232721+00:00",
+  "script": "27_reach_figures.py",
+  "argv": [
+    "scripts/27_reach_figures.py",
+    "--run-id",
+    "run_20260910T174433Z"
+  ],
+  "git": {
+    "commit": "3b4648611ebe4b08b79f5e83a258e893851552f3",
+    "commit_short": "3b46486",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "aper/figures/fig_conservatism.pdf",
+      "paper/figures/fig_enforce.pdf",
+      "paper/figures/fig_gamma.pdf",
+      "paper/figures/fig_map_jfield.pdf",
+      "paper/figures/fig_power_model.pdf",
+      "paper/figures/fig_reach_frontier.pdf",
+      "paper/figures/fig_stepchange.pdf",
+      "paper/figures/fig_timing_survival.pdf",
+      "scripts/27_reach_figures.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/threshold_baseline/threshold_trials.jsonl",
+      "exists": true,
+      "sha256": "697c2cb8fcdc60fc311e4df5d21c60704e04a3e92332bfc69026213c3b623b50",
+      "bytes": 673663
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/main3_adaptive_20260915/reach_trials_train.jsonl",
+      "exists": true,
+      "sha256": "65fbd500b7b945e58ac1b68b5b6bc4a2756aa124807784b46ace6a69adf2347a",
+      "bytes": 626637
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/mismatch3_adaptive_20260915/reach_trials_train.jsonl",
+      "exists": true,
+      "sha256": "83a57245039b0c1bb6bc94879a007f7df8f74a85e483fb36b0754898eb76bc44",
+      "bytes": 313517
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/hybrid_validation/hybrid_validation.json",
+      "exists": true,
+      "sha256": "61cc0d2f31abfe176ae7536a404752954696b0ef9d4b1ce7cfac49907c072b19",
+      "bytes": 336347
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/EP2MPC/runs/run_20260910T174433Z/reach/../reach_maps_adaptive/train/certificates.json",
+      "exists": true,
+      "sha256": "859bd814d1baa7fcc98e0d0571579f48909efad807641215682aeb152c9b0517",
+      "bytes": 3721
+    }
+  ],
+  "effective_config": {},
+  "figure": "threshold_gamma_sweep",
+  "stats": {
+    "gamma_eff_band": [
+      1.215,
+      1.317
+    ],
+    "gamma_eff_median": 1.245,
+    "gamma_eff_per_map": {
+      "reach_train_20260911": 1.215,
+      "reach_train_20260912": 1.24,
+      "reach_train_20260913": 1.317,
+      "reach_train_20260914": 1.216,
+      "reach_train_20260915": 1.282,
+      "reach_train_20260916": 1.25
+    },
+    "hybrid_nominal": [
+      0.0,
+      63.75
+    ],
+    "hybrid_mismatch": [
+      16.667,
+      25.0
+    ],
+    "reach_nominal": [
+      0.0,
+      10.0
+    ],
+    "reach_mismatch": [
+      0.0,
+      3.333
+    ]
+  }
+}

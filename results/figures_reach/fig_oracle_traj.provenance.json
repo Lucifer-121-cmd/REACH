@@ -1,0 +1,68 @@
+{
+  "artifact": "fig_oracle_traj.pdf",
+  "run_id": "run_20260910T174433Z",
+  "generated_utc": "2026-10-03T20:18:47.121560+00:00",
+  "script": "33_oracle_trajectory_figure.py",
+  "argv": [
+    "scripts/33_oracle_trajectory_figure.py",
+    "--run-id",
+    "run_20260910T174433Z",
+    "--maps-root",
+    "results/reach_maps_adaptive",
+    "--from-cache"
+  ],
+  "git": {
+    "commit": "d5b0e11fc15f8abf5378a4bb55ca34716eb9ba86",
+    "commit_short": "d5b0e11",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "scripts/33_oracle_trajectory_figure.py"
+    ]
+  },
+  "host": "x05",
+  "python": "3.11.16",
+  "inputs": [
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/REACH-nmpc/runs/run_20260910T174433Z/reach/oracle/oracle_results.json",
+      "exists": true,
+      "sha256": "98cb868c4fc94062ea26dc50f2899dd5fd8024013f94e284c6db907bf6e6dad7",
+      "bytes": 248539
+    },
+    {
+      "path": "/home/ai/temp_20260712/Nischal-Projects/REACH-nmpc/runs/run_20260910T174433Z/reach/main3_adaptive_20260915/reach_trials_train.jsonl",
+      "exists": true,
+      "sha256": "65fbd500b7b945e58ac1b68b5b6bc4a2756aa124807784b46ace6a69adf2347a",
+      "bytes": 626637
+    },
+    {
+      "path": "results/reach_maps_adaptive/train/reach_train_20260912.yaml",
+      "exists": true,
+      "sha256": "a619e7231dd0efbb5429c7b5487193fd887ad8cc86c6ae32ddc387092c85eb47",
+      "bytes": 837
+    },
+    {
+      "path": "results/reach_maps_adaptive/train/certificates.json",
+      "exists": true,
+      "sha256": "859bd814d1baa7fcc98e0d0571579f48909efad807641215682aeb152c9b0517",
+      "bytes": 3721
+    }
+  ],
+  "effective_config": {},
+  "figure": "fig_oracle_traj",
+  "selection_rule": "training-map pairs of the deployed oracle campaign where the oracle docked and the arm did not collide; the pair whose arm/ceiling fraction is closest to the pooled 0.596",
+  "selected": {
+    "map": "reach_train_20260912",
+    "seed": 31000,
+    "B": 133.9,
+    "a_q": 26.28390890979495,
+    "certified_ceiling_m": 7.794112549695411
+  },
+  "pair_fractions": {
+    "arm_over_ceiling": 0.616761273401729,
+    "oracle_over_ceiling": 0.9727830419430813
+  },
+  "verification": "both re-runs bit-identical to the recorded rows (outcome, energies, reach, turn-back fields); trajectories logged by a recording PioneerEnv subclass, no logic touched",
+  "arm_margin_at_turnback_J": 38.75983370202265,
+  "oracle_spare_at_dock_J": 2.9710803470413794
+}

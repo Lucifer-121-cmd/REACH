@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ep2mpc"
+version = "0.1.0"
+description = "EP²-MPC: Energy-Predictive Proximity-Adaptive Model Predictive Control"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "casadi",
+    "pyyaml",
+    "matplotlib",
+    "requests",
+]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mpc*", "env*", "evolution*", "evaluation*", "llm*", "utils*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

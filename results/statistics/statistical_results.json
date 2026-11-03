@@ -1,0 +1,453 @@
+{
+  "corridor": {
+    "scenario": "corridor",
+    "n_seeds": 5,
+    "n_trials_per_seed": 50,
+    "total_trials": 250,
+    "ep2_evolution_root": "runs/run_20260904T092518Z/reevolution",
+    "ep2_energy_mean": 126.56047345057942,
+    "ep2_energy_std": 0.6271918100951989,
+    "ep2_energy_ci95": [
+      126.4805686912401,
+      126.64135197534229
+    ],
+    "ep2_time_mean": 16.076,
+    "ep2_time_std": 0.08935323161475457,
+    "ep2_time_ci95": [
+      16.064799999999998,
+      16.08721
+    ],
+    "ep2_success_rate": 1.0,
+    "ep2_solver_ms_mean": 11.732525426427884,
+    "ep2_solver_ms_median": 11.716734629553464,
+    "ep2_solver_ms_p95": 12.480670063154806,
+    "ep2_solver_status_counts": {
+      "success": 250
+    },
+    "baselines": {
+      "apf": {
+        "energy_mean": 135.2636551903262,
+        "energy_std": 0.6138544107656254,
+        "time_mean": 17.006,
+        "time_std": 0.075921011584409,
+        "success_rate": 1.0,
+        "solver_ms_mean": 0.014414766356731617
+      },
+      "standard_mpc_casadi": {
+        "energy_mean": 127.07503559150783,
+        "energy_std": 0.5692591619312939,
+        "time_mean": 16.482000000000003,
+        "time_std": 0.07399999999999962,
+        "success_rate": 1.0,
+        "solver_ms_mean": 10.155781682231535
+      },
+      "energy_penalized_mpc": {
+        "energy_mean": 127.81808955594983,
+        "energy_std": 0.5938122849501583,
+        "time_mean": 16.844,
+        "time_std": 0.08039900496896799,
+        "success_rate": 1.0,
+        "solver_ms_mean": 6.306369676855734
+      }
+    },
+    "wilcoxon": {
+      "apf": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 5.349988455053124e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "standard_mpc_casadi": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -0.4912,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 5.798200277061444e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "energy_penalized_mpc": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -0.8584,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 1.720888153992273e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      }
+    }
+  },
+  "s_curve": {
+    "scenario": "s_curve",
+    "n_seeds": 5,
+    "n_trials_per_seed": 50,
+    "total_trials": 250,
+    "ep2_evolution_root": "runs/run_20260904T092518Z/reevolution",
+    "ep2_energy_mean": 136.52980387954898,
+    "ep2_energy_std": 0.6642937090837301,
+    "ep2_energy_ci95": [
+      136.44204163559863,
+      136.61302111481533
+    ],
+    "ep2_time_mean": 18.9764,
+    "ep2_time_std": 0.12313829623638642,
+    "ep2_time_ci95": [
+      18.959600000000002,
+      18.99041
+    ],
+    "ep2_success_rate": 1.0,
+    "ep2_solver_ms_mean": 55.19521125015468,
+    "ep2_solver_ms_median": 55.205065562193724,
+    "ep2_solver_ms_p95": 60.905431130105036,
+    "ep2_solver_status_counts": {
+      "success": 210,
+      "max_iter": 40
+    },
+    "baselines": {
+      "apf": {
+        "energy_mean": 158.75948092495793,
+        "energy_std": 1.913955345355519,
+        "time_mean": 26.678,
+        "time_std": 0.2773373397146515,
+        "success_rate": 1.0,
+        "solver_ms_mean": 0.014131628779249424
+      },
+      "standard_mpc_casadi": {
+        "energy_mean": 137.20240608812384,
+        "energy_std": 0.6011612852884058,
+        "time_mean": 18.37,
+        "time_std": 0.07549834435270784,
+        "success_rate": 1.0,
+        "solver_ms_mean": 14.005606422951548
+      },
+      "energy_penalized_mpc": {
+        "energy_mean": 138.8926453856833,
+        "energy_std": 0.59691326966514,
+        "time_mean": 19.106,
+        "time_std": 0.07323933369440305,
+        "success_rate": 1.0,
+        "solver_ms_mean": 10.11625926815322
+      },
+      "standard_mpc_casadi[N=24]": {
+        "energy_mean": 138.52121587597884,
+        "energy_std": 0.6040713387942311,
+        "time_mean": 19.134,
+        "time_std": 0.07901898506055446,
+        "success_rate": 1.0,
+        "solver_ms_mean": 15.642496947746928
+      }
+    },
+    "wilcoxon": {
+      "apf": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 7.122583164248499e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "standard_mpc_casadi": {
+        "energy": {
+          "W": 3.0,
+          "p": 8.881784197001252e-15,
+          "cliffs_d": -0.5392,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 6.445334305217811e-10,
+          "cliffs_d": 1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": false
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "energy_penalized_mpc": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -0.992,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 31.0,
+          "p": 9.572478230695542e-08,
+          "cliffs_d": -0.5848,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "standard_mpc_casadi[N=24]": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -0.9744,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 26.0,
+          "p": 2.3236760523520285e-08,
+          "cliffs_d": -0.6748,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      }
+    }
+  },
+  "chicane": {
+    "scenario": "chicane",
+    "n_seeds": 5,
+    "n_trials_per_seed": 50,
+    "total_trials": 250,
+    "ep2_evolution_root": "runs/run_20260904T092518Z/reevolution",
+    "ep2_energy_mean": 131.66674688706487,
+    "ep2_energy_std": 0.6827577709278895,
+    "ep2_energy_ci95": [
+      131.57391470507085,
+      131.7505282281254
+    ],
+    "ep2_time_mean": 16.903200000000005,
+    "ep2_time_std": 0.08573074127756022,
+    "ep2_time_ci95": [
+      16.892390000000002,
+      16.913610000000002
+    ],
+    "ep2_success_rate": 1.0,
+    "ep2_solver_ms_mean": 30.827007095964856,
+    "ep2_solver_ms_median": 30.79476682179933,
+    "ep2_solver_ms_p95": 32.042700132382485,
+    "ep2_solver_status_counts": {
+      "success": 250
+    },
+    "baselines": {
+      "apf": {
+        "energy_mean": 157.50598306804187,
+        "energy_std": 2.1117526121120433,
+        "time_mean": 25.806000000000004,
+        "time_std": 0.4095900389413784,
+        "success_rate": 1.0,
+        "solver_ms_mean": 0.013754254309778549
+      },
+      "standard_mpc_casadi": {
+        "energy_mean": 133.55321392158618,
+        "energy_std": 0.7108868517127866,
+        "time_mean": 17.195999999999998,
+        "time_std": 0.08708616422830878,
+        "success_rate": 1.0,
+        "solver_ms_mean": 11.379567098077617
+      },
+      "energy_penalized_mpc": {
+        "energy_mean": 127.0368277168273,
+        "energy_std": 25.471477056528414,
+        "time_mean": 16.668000000000003,
+        "time_std": 3.375466782535417,
+        "success_rate": 0.92,
+        "solver_ms_mean": 8.12936394603599
+      },
+      "standard_mpc_casadi[N=24]": {
+        "energy_mean": 134.23868331266772,
+        "energy_std": 0.6762019333631698,
+        "time_mean": 18.25,
+        "time_std": 0.08774964387392162,
+        "success_rate": 1.0,
+        "solver_ms_mean": 15.89902210841053
+      },
+      "standard_mpc_casadi[N=50]": {
+        "energy_mean": 147.44170959145907,
+        "energy_std": 0.650289774504918,
+        "time_mean": 24.254,
+        "time_std": 0.08534635317340715,
+        "success_rate": 1.0,
+        "solver_ms_mean": 25.448769723709642
+      }
+    },
+    "wilcoxon": {
+      "apf": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 7.294547719323056e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "standard_mpc_casadi": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -0.9648,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 2.429094976329681e-10,
+          "cliffs_d": -0.9872,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "energy_penalized_mpc": {
+        "energy": {
+          "W": 194.0,
+          "p": 6.010637926934237e-06,
+          "cliffs_d": -0.84,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 194.0,
+          "p": 1.4846503803172628e-05,
+          "cliffs_d": -0.84,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 0.92
+      },
+      "standard_mpc_casadi[N=24]": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 4.802049295888132e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      },
+      "standard_mpc_casadi[N=50]": {
+        "energy": {
+          "W": 0.0,
+          "p": 1.7763568394002505e-15,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "time": {
+          "W": 0.0,
+          "p": 3.9218124097867246e-10,
+          "cliffs_d": -1.0,
+          "effect": "large",
+          "significant": true,
+          "ep2_better": true
+        },
+        "n_paired": 50,
+        "solvability_win": false,
+        "ep2_success": 1.0,
+        "base_success": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# EP²-MPC dependencies — PINNED to the versions that produced the results in
+# results/ on the original Windows machine (verified 2026-08-31 via conda list).
+# Pin exactly: this project is reproducibility-critical and several reported
+# numbers cannot be re-derived from any current config.
+#
+# All of these have manylinux wheels, and the casadi wheel BUNDLES IPOPT with
+# MUMPS. No sudo, no apt, no system IPOPT and no gfortran are required.
+#
+# Requires Python >= 3.11 (numpy 2.4.x dropped 3.10).
+# On a headless server also set: export MPLBACKEND=Agg
+
+numpy==2.4.3
+scipy==1.17.1
+casadi==3.7.2
+matplotlib==3.10.8
+pyyaml==6.0.3
+tqdm==4.67.3
+rich==14.3.3
+pytest==9.0.2
+
+# Only used by scripts/06_bo_comparison.py, which is guarded by a try/except and
+# falls back to random search if absent. Pulls in scikit-learn, joblib and pyaml.
+# The BO comparison is a demoted claim (see PLAN.md) — safe to omit if it fights
+# the resolver.
+scikit-optimize==0.10.2

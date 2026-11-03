@@ -1,0 +1,32 @@
+name: reach_stepchange
+description: 'step-change map: terrain m=3 beyond x=15; B=280 J allows crossing only
+  with banking; v2 staggered obstacles (the v1 squeeze measured the map, not the controllers)'
+bounds:
+- 0.0
+- 0.0
+- 30.0
+- 6.0
+start:
+- 1.0
+- 3.0
+- 0.0
+goal:
+- 1.0
+- 3.0
+obstacles:
+- - 8.0
+  - 3.0
+  - 0.8
+- - 13.0
+  - 4.9
+  - 0.8
+terrain:
+- x0: 15.0
+  y0: 0.0
+  x1: 30.0
+  y1: 6.0
+  m1: 3.0
+  m4: 3.0
+dock:
+- 1.0
+- 3.0

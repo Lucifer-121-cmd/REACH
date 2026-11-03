@@ -1,0 +1,168 @@
+{
+  "definition": "Ebar(x) >= P(u*)\u00b7dt + Ebar(x') evaluated per free cell x 8 headings, u* = the certificate's own action model (steer to the geodesic tangent at KP, command v*, from rest \u2014 the worst case for realignment). affine form a_q + D_J with the deployed per-map a_q.",
+  "stride": 6,
+  "results": [
+    {
+      "map": "reach_train_20260911",
+      "a_q": 44.711083110508966,
+      "n_states": 12706,
+      "n_ok": 471,
+      "n_bad": 12235,
+      "n_successor_inf": 22,
+      "violation_rate": 0.9629308987879742,
+      "worst_deficit_J": 1.2511624950187752,
+      "worst_at": [
+        3.6,
+        0.6,
+        0.0
+      ],
+      "mean_deficit_J": 0.5100100846235445,
+      "p95_deficit_J": 0.8764229781626796,
+      "split": "train"
+    },
+    {
+      "map": "reach_train_20260912",
+      "a_q": 38.07310604687621,
+      "n_states": 12540,
+      "n_ok": 460,
+      "n_bad": 12080,
+      "n_successor_inf": 20,
+      "violation_rate": 0.9633173843700159,
+      "worst_deficit_J": 1.1526051709952583,
+      "worst_at": [
+        17.1,
+        0.6,
+        0.0
+      ],
+      "mean_deficit_J": 0.5021464344843489,
+      "p95_deficit_J": 0.9380302702002723,
+      "split": "train"
+    },
+    {
+      "map": "reach_train_20260913",
+      "a_q": 40.91291892327069,
+      "n_states": 12470,
+      "n_ok": 659,
+      "n_bad": 11811,
+      "n_successor_inf": 18,
+      "violation_rate": 0.9471531676022454,
+      "worst_deficit_J": 1.209004258480661,
+      "worst_at": [
+        23.7,
+        0.3,
+        0.0
+      ],
+      "mean_deficit_J": 0.5088287194898115,
+      "p95_deficit_J": 0.9504548342895589,
+      "split": "train"
+    },
+    {
+      "map": "reach_train_20260914",
+      "a_q": 39.00781365818563,
+      "n_states": 13398,
+      "n_ok": 439,
+      "n_bad": 12959,
+      "n_successor_inf": 26,
+      "violation_rate": 0.9672339155097776,
+      "worst_deficit_J": 1.2149523376302511,
+      "worst_at": [
+        10.5,
+        0.3,
+        0.0
+      ],
+      "mean_deficit_J": 0.4984719701997417,
+      "p95_deficit_J": 0.8315882319263286,
+      "split": "train"
+    },
+    {
+      "map": "reach_train_20260915",
+      "a_q": 28.64248676188812,
+      "n_states": 13282,
+      "n_ok": 98,
+      "n_bad": 13184,
+      "n_successor_inf": 22,
+      "violation_rate": 0.9926215931335642,
+      "worst_deficit_J": 1.2671985977203235,
+      "worst_at": [
+        20.4,
+        3.6,
+        0.0
+      ],
+      "mean_deficit_J": 0.4649905565416453,
+      "p95_deficit_J": 0.828985194012148,
+      "split": "train"
+    },
+    {
+      "map": "reach_train_20260916",
+      "a_q": 54.03422887468606,
+      "n_states": 14124,
+      "n_ok": 847,
+      "n_bad": 13277,
+      "n_successor_inf": 12,
+      "violation_rate": 0.9400311526479751,
+      "worst_deficit_J": 1.2558085201696372,
+      "worst_at": [
+        23.1,
+        4.5,
+        0.0
+      ],
+      "mean_deficit_J": 0.5302742951470847,
+      "p95_deficit_J": 1.0848926756157482,
+      "split": "train"
+    },
+    {
+      "map": "reach_heldout_20360911",
+      "a_q": 52.321863389970474,
+      "n_states": 11943,
+      "n_ok": 419,
+      "n_bad": 11524,
+      "n_successor_inf": 33,
+      "violation_rate": 0.9649166875994306,
+      "worst_deficit_J": 1.1202525434921142,
+      "worst_at": [
+        20.4,
+        3.3,
+        0.0
+      ],
+      "mean_deficit_J": 0.5022513358057001,
+      "p95_deficit_J": 0.984714547392997,
+      "split": "heldout"
+    },
+    {
+      "map": "reach_heldout_20360912",
+      "a_q": 34.608153480159004,
+      "n_states": 13281,
+      "n_ok": 308,
+      "n_bad": 12973,
+      "n_successor_inf": 15,
+      "violation_rate": 0.976808975227769,
+      "worst_deficit_J": 1.1151433767354604,
+      "worst_at": [
+        6.3,
+        4.2,
+        0.0
+      ],
+      "mean_deficit_J": 0.4797421016321922,
+      "p95_deficit_J": 0.828985194012148,
+      "split": "heldout"
+    },
+    {
+      "map": "reach_heldout_20360913",
+      "a_q": 40.96772996668361,
+      "n_states": 13096,
+      "n_ok": 424,
+      "n_bad": 12672,
+      "n_successor_inf": 32,
+      "violation_rate": 0.967623701893708,
+      "worst_deficit_J": 1.1766145358551796,
+      "worst_at": [
+        27.3,
+        4.2,
+        1.57
+      ],
+      "mean_deficit_J": 0.5007292856502699,
+      "p95_deficit_J": 0.8868493161261313,
+      "split": "heldout"
+    }
+  ]
+}

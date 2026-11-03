@@ -1,0 +1,70 @@
+# EP²-MPC → REACH clean repo .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environments
+venv/
+.venv/
+ep2mpc_env/
+# NOTE: do NOT add a bare "env/" pattern here. env/ is SOURCE CODE
+# (pioneer_env.py, lidar_sim.py, scenarios.py, trial_randomizer.py) —
+# the simulator the whole paper rests on.
+
+# Packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# CasADi / IPOPT temporary artifacts
+solver_status.txt
+casadi_codegen.c
+casadi_codegen.o
+casadi_codegen.so
+casadi_codegen.dll
+
+# LaTeX generated artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+.opencode/
+
+# Campaign output lives on /data (separate device, large capacity)
+# and is reached through this symlink. Nothing under it is tracked.
+runs
+runs/
+
+# Vision QA credentials
+.visionrc
+
+# Paper: LaTeX build artefacts + downloaded IEEE template
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/IEEE-Transactions-LaTeX2e-templates-and-instructions.zip
+paper/template/
+
+# Pytest
+.pytest_cache/
+
+# Vision model logs and raw outputs (experiment-time only)
+fig_system_schematic/fig_system_schematic-1.png
+
+Guide for authors - Robotics and Autonomous Systems - ISSN 0921-8890 _ ScienceDirect.com by Elsevier.pdf

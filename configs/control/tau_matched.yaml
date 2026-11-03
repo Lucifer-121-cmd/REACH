@@ -1,0 +1,80 @@
+robot:
+  mass: 9.0
+  wheel_radius: 0.095
+  wheelbase: 0.33
+  max_v: 1.2
+  max_omega: 3.14159
+  max_dv: 0.5
+  max_domega: 1.0
+  collision_radius: 0.25
+  tau_v: 0.3
+  tau_omega: 0.2
+lidar:
+  n_rays: 36
+  max_range: 8.0
+  noise_std: 0.02
+energy_model:
+  c1: 2.5
+  c2: 0.8
+  c3: 0.3
+  c4: 1.2
+  c5: 3.0
+mpc:
+  dt: 0.1
+  N_min: 8
+  N_max: 50
+  N_default: 12
+  ipopt_max_iter: 200
+  ipopt_tol: 0.0001
+  warm_start: true
+  tau_v: 0.3
+  tau_omega: 0.2
+  _comment_tau: 'F-1 matched-tau control 2026-09-22: planning lag matched to plant
+    (robot block tau_v=0.3, tau_omega=0.2); every other key identical to global_config.yaml'
+adaptive_horizon:
+  beta_d: 3.0
+  beta_e: 0.15
+  d_thresh_default: 1.0
+  dP_thresh_default: 10.0
+  w_power: 0.7
+default_weights:
+  w_p: 0.3
+  w_dP: 0.05
+  w_E: 0.3
+  w_omega: 0.05
+  w_d: 400.0
+  d_safe: 0.35
+  w_goal: 10.0
+  w_t: 0.3
+  w_du: 0.05
+evolution:
+  pop_size: 16
+  generations: 20
+  seed: 42
+  hv_reference:
+  - 270
+  - 52
+  - 600
+  - 1.0
+  stagnation_window: 3
+  stagnation_threshold: 0.001
+  injection_count: 6
+  sbx_eta: 15
+  mutation_eta: 20
+  cosine_similarity_threshold: 0.95
+  llm_params_mode: llm
+  use_llm_params: true
+llm:
+  ollama_bin: ollama
+  model_strategy: glm-4.7-flash
+  model_params: qwen3:14b
+  base_url_strategy: http://localhost:11434
+  base_url_params: http://localhost:11434
+  timeout: 1200
+  max_retries: 3
+  availability_cache_ttl_sec: 30
+evaluation:
+  n_trials: 50
+  n_seeds: 5
+  timeout_per_trial: 60.0
+results_dir: results

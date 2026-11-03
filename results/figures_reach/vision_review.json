@@ -1,0 +1,30 @@
+{
+ "fig_timing_survival-1.png": {
+  "figure": "figure.png",
+  "verdict": "FIX",
+  "defects": [
+   {
+    "category": "CLIPPING",
+    "severity": "low",
+    "where": "Left panel, bottom of plot near 100 ms",
+    "what": "Curves terminate exactly at the 10^-4 axis floor, so tail probabilities below 10^-4 appear truncated.",
+    "fix": "Extend the y-axis lower limit (e.g., to 10^-5) or note the truncation in the caption."
+   },
+   {
+    "category": "COLOUR/CLARITY",
+    "severity": "low",
+    "where": "Left panel, 20-90 ms region",
+    "what": "The light-blue dotted N=12 curve is faint and several N curves nearly coincide, making them hard to distinguish.",
+    "fix": "Slightly thicken lines and increase colour contrast between the N variants."
+   },
+   {
+    "category": "LEGIBILITY",
+    "severity": "low",
+    "where": "Right panel, above each bar",
+    "what": "The p95 dash markers are very short black segments that are easy to overlook or mistake for artifacts.",
+    "fix": "Lengthen the p95 dashes or replace them with whisker/interval marks tied to the bars."
+   }
+  ],
+  "overall": "Nearly publication-ready; only minor tail-clipping and marker-legibility tweaks are needed before submission."
+ }
+}

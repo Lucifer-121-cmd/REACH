@@ -1,0 +1,50 @@
+[
+  {
+    "map": "reach_heldout_20360911",
+    "a_q": 52.321863389970474,
+    "slope": 1.0,
+    "denomination": "J",
+    "coverage_target": 0.95,
+    "coverage_achieved": 0.9499870878884393,
+    "n_states": 11984,
+    "n_reached": 11617,
+    "excess_mean": 24.38970898674296,
+    "excess_p50": 23.794356080135614,
+    "detour_p95": 1.2402694567224293,
+    "rollout_s": 12.4,
+    "note": "a_q = quantile_q(V_fb - D_J) over sampled states; V_fb from a terrain-aware pi_fb rollout (pure pursuit at v* on the J-geodesic, same gains as the legacy fit); slope 1.0 because D_J already integrates the local floor",
+    "split": "heldout"
+  },
+  {
+    "map": "reach_heldout_20360912",
+    "a_q": 34.608153480159004,
+    "slope": 1.0,
+    "denomination": "J",
+    "coverage_target": 0.95,
+    "coverage_achieved": 0.9499689730065156,
+    "n_states": 13304,
+    "n_reached": 12892,
+    "excess_mean": 16.44920056307999,
+    "excess_p50": 14.972599121357213,
+    "detour_p95": 1.2742856682980883,
+    "rollout_s": 13.7,
+    "note": "a_q = quantile_q(V_fb - D_J) over sampled states; V_fb from a terrain-aware pi_fb rollout (pure pursuit at v* on the J-geodesic, same gains as the legacy fit); slope 1.0 because D_J already integrates the local floor",
+    "split": "heldout"
+  },
+  {
+    "map": "reach_heldout_20360913",
+    "a_q": 40.96772996668361,
+    "slope": 1.0,
+    "denomination": "J",
+    "coverage_target": 0.95,
+    "coverage_achieved": 0.9499372253609542,
+    "n_states": 13136,
+    "n_reached": 12744,
+    "excess_mean": 18.955744288789035,
+    "excess_p50": 17.647425294789976,
+    "detour_p95": 1.25532292364778,
+    "rollout_s": 13.1,
+    "note": "a_q = quantile_q(V_fb - D_J) over sampled states; V_fb from a terrain-aware pi_fb rollout (pure pursuit at v* on the J-geodesic, same gains as the legacy fit); slope 1.0 because D_J already integrates the local floor",
+    "split": "heldout"
+  }
+]
